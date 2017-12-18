@@ -1,4 +1,4 @@
-# qtrader
+# QTrader
 
 > QTrader desktop App.
 
