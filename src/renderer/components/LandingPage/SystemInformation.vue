@@ -14,6 +14,16 @@
         <div class="name">Vue.js:</div>
         <div class="value">{{ vue }}</div>
       </div>
+
+      <div class="item">
+        <div class="name">vue-router:</div>
+        <div class="value">{{ vueRouter}}</div>
+      </div>
+
+      <div class="item">
+        <div class="name">vuex:</div>
+        <div class="value">{{ vuex }}</div>
+      </div>
       <div class="item">
         <div class="name">Electron:</div>
         <div class="value">{{ electron }}</div>
@@ -39,7 +49,9 @@
         node: process.versions.node,
         path: this.$route.path,
         platform: require('os').platform(),
-        vue: require('vue/package.json').version
+        vue: require('vue/package.json').version,
+        vuex: require('vuex/package.json').version,
+        vueRouter: require('vue-router/package.json').version
       }
     }
   }
